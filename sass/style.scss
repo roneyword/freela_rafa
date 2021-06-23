@@ -19,7 +19,7 @@
 // ==========================================================================
 
 // @import "base/fonts";
-// @import "base/grid";
+@import "base/grid";
 // @import "base/btn_default";
 @import "base/global";
 
@@ -28,6 +28,12 @@
 // ==========================================================================
 
 @import "sections/hero-banner";
+@import "sections/service-card";
+@import "sections/service-company";
+@import "sections/service-team";
+@import "sections/video-banner";
+@import "sections/subscribe";
+@import "sections/resource";
 
 // ==========================================================================
 // Component

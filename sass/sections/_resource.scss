@@ -1,0 +1,32 @@
+.resource {
+  height: 100vh;
+  padding: 100px 0px;
+  margin: 0px 20px;
+}
+
+.resource-title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  strong {
+    color: mainColors("grey-500");
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: mainColors("black");
+    font-size: 2.625rem;
+    font-weight: 800;
+
+    span {
+      color: mainColors("cyan");
+    }
+  }
+
+  p {
+    color: mainColors("grey-500");
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}

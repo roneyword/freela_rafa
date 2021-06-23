@@ -1,0 +1,97 @@
+.service-company {
+  background: white;
+  padding: 100px 0px;
+  margin: 0px 20px;
+}
+
+.service-company-title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  span {
+    color: mainColors("grey-500");
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: mainColors("black");
+    font-size: 2.625rem;
+    font-weight: 800;
+  }
+
+  h3 {
+    color: mainColors("cyan");
+    font-size: 2.625rem;
+    font-weight: 800;
+  }
+}
+
+.service-company-content {
+  display: flex;
+
+  .service-company-content-img {
+    width: calc(50% - 20px);
+
+    img {
+      border-radius: 5px;
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  .service-company-content-container {
+    flex: 1;
+
+    h4 {
+      margin-bottom: 30px;
+      color: mainColors("grey-500");
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.8;
+    }
+
+    .service-company-card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+
+      img {
+        width: 12%;
+        height: auto;
+        margin-right: 30px;
+      }
+
+      .service-company-card-text {
+        h2 {
+          color: mainColors("black");
+          font-size: 1.1rem;
+          font-weight: 800;
+        }
+
+        p {
+          color: mainColors("grey-500");
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .service-company-content {
+    flex-direction: column;
+
+    .service-company-content-img {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+}

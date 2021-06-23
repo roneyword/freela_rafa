@@ -1,7 +1,80 @@
 .hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  // min-height: 150vh;
+  padding: 0 20px;
   background-image: url(../../assets/img/hero_banner/n-slider-01.jpg);
   background-size: cover;
   background-position: center;
+
+  .hero-banner-title {
+    max-width: 50%;
+
+    strong {
+      color: mainColors("white");
+      font-size: 0.813rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      color: mainColors("white");
+      font-size: 4.375rem;
+      font-weight: 800;
+      line-height: 5rem;
+
+      span {
+        color: mainColors("cyan");
+      }
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 20px 55px;
+      color: white;
+      font-weight: 800;
+      border: 2px solid white;
+      border-radius: 5px;
+      background: transparent;
+      transition: all 0.2s linear;
+
+      &:hover {
+        border: 2px solid cyan;
+        background: mainColors("cyan");
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .hero-banner {
+    min-height: 140vh;
+  }
+}
+
+@media (max-width: 1180px) {
+  .hero-banner {
+    .hero-banner-title {
+      max-width: 70%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    .hero-banner-title {
+      max-width: 90%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .hero-banner {
+    .hero-banner-title {
+      h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+    }
+  }
 }
