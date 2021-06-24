@@ -1,0 +1,19 @@
+.company-img {
+  border-bottom: 1px solid grey;
+  padding: 50px 0px;
+}
+
+.company-img-container {
+  display: flex;
+  justify-content: space-between;
+
+  .company-img-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 180px;
+      height: auto;
+    }
+  }
+}

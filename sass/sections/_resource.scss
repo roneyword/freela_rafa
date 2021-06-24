@@ -1,12 +1,14 @@
 .resource {
-  height: 100vh;
-  padding: 100px 0px;
+  padding: 100px 0px 200px 0px;
   margin: 0px 20px;
 }
 
 .resource-title {
   margin-bottom: 50px;
   text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
 
   strong {
     color: mainColors("grey-500");
@@ -18,6 +20,7 @@
     color: mainColors("black");
     font-size: 2.625rem;
     font-weight: 800;
+    margin-bottom: 20px;
 
     span {
       color: mainColors("cyan");
@@ -28,5 +31,98 @@
     color: mainColors("grey-500");
     font-size: 1.125rem;
     font-weight: 400;
+  }
+}
+
+.resource-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  counter-reset: myCards;
+
+  .resource-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3 - 20px);
+    min-width: 300px;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    &:first-child::after {
+      display: none;
+    }
+
+    &::after {
+      content: url(../../assets/img/resource/ball_img.png);
+      position: absolute;
+      top: 23%;
+      left: 0px;
+      transform: translate(-50%, 0%);
+    }
+
+    .resource-card-header {
+      position: relative;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 24px 0 rgba(26, 47, 106, 0.13);
+
+      &::after {
+        content: "0" counter(myCards);
+        counter-increment: myCards;
+        position: absolute;
+        bottom: -10px;
+        right: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+        font-weight: 700;
+        color: white;
+        border-radius: 50%;
+        background: mainColors("black");
+      }
+
+      img {
+        width: 50px;
+        height: auto;
+      }
+    }
+
+    .resource-card-content {
+      text-align: center;
+
+      h3 {
+        font-size: 1.375rem;
+        font-weight: 800;
+        color: mainColors("black");
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: mainColors("grey-500");
+      }
+    }
+  }
+}
+
+@media (max-width: 1075px) {
+  .resource-card-container {
+    .resource-card {
+      &::after {
+        display: none;
+      }
+    }
   }
 }

@@ -1,0 +1,177 @@
+.storie {
+  padding: 100px 0px;
+  margin: 0px 20px;
+}
+
+.storie-title {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+
+  strong {
+    color: mainColors("grey-500");
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: mainColors("black");
+    font-size: 2.625rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+    span {
+      color: mainColors("cyan");
+    }
+  }
+}
+
+.storie-container-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .storie-card {
+    position: relative;
+    width: calc(100% / 3 - 20px);
+    min-width: 350px;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    .storie-card-header {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+
+      .storie-card-header-date {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        background: mainColors("cyan");
+
+        strong {
+          font-size: 2rem;
+          font-weight: 800;
+          color: mainColors("white");
+        }
+
+        span {
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: mainColors("white");
+        }
+      }
+
+      img {
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .storie-card-content {
+      padding: 0px 30px;
+
+      .storie-card-content-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .storie-card-meta {
+          i {
+            font-size: 0.813rem;
+            color: mainColors("cyan");
+          }
+
+          small {
+            font-size: 0.813rem;
+            font-weight: 400;
+            color: mainColors("grey-500");
+          }
+        }
+      }
+
+      .storie-card-content-body {
+        margin-bottom: 20px;
+
+        h2 {
+          font-size: 1.375rem;
+          font-weight: 800;
+          color: mainColors("black");
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 400;
+          color: mainColors("grey-500");
+        }
+      }
+
+      .storie-card-content-footer {
+        a {
+          position: relative;
+          color: mainColors("black");
+          font-size: 0.75rem;
+          font-weight: 800;
+          transition: color 0.2s linear;
+
+          i {
+            margin-left: 10px;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 70px;
+            height: 1px;
+            background: black;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 0px;
+            height: 1px;
+            background: black;
+            transition: all 0.3s linear;
+          }
+
+          &:hover {
+            color: mainColors("cyan");
+
+            &::after {
+              width: 70px;
+              background: mainColors("cyan");
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .storie-container-card {
+    .storie-card {
+      width: 100%;
+    }
+  }
+}
