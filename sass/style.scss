@@ -18,9 +18,7 @@
 // Base
 // ==========================================================================
 
-// @import "base/fonts";
 @import "base/grid";
-// @import "base/btn_default";
 @import "base/global";
 
 // ==========================================================================
@@ -37,10 +35,10 @@
 @import "sections/testimonial";
 @import "sections/company-img";
 @import "sections/storie";
-@import "sections/footer";
 
 // ==========================================================================
 // Component
 // ==========================================================================
 
 @import "component/header";
+@import "component/footer";
