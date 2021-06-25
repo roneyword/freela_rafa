@@ -7,24 +7,6 @@
 .service-company-title {
   margin-bottom: 50px;
   text-align: center;
-
-  span {
-    color: mainColors("grey-500");
-    font-size: 0.9rem;
-    font-weight: 700;
-  }
-
-  h2 {
-    color: mainColors("black");
-    font-size: 2.625rem;
-    font-weight: 800;
-  }
-
-  h3 {
-    color: mainColors("cyan");
-    font-size: 2.625rem;
-    font-weight: 800;
-  }
 }
 
 .service-company-content {
@@ -45,9 +27,6 @@
 
     h4 {
       margin-bottom: 30px;
-      color: mainColors("grey-500");
-      font-size: 1.1rem;
-      font-weight: 600;
       line-height: 1.8;
     }
 
@@ -60,21 +39,6 @@
         width: 12%;
         height: auto;
         margin-right: 30px;
-      }
-
-      .service-company-card-text {
-        h2 {
-          color: mainColors("black");
-          font-size: 1.1rem;
-          font-weight: 800;
-        }
-
-        p {
-          color: mainColors("grey-500");
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 2;
-        }
       }
     }
   }

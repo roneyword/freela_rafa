@@ -14,16 +14,7 @@
     background-position: center;
     background-color: mainColors("cyan");
 
-    strong {
-      font-size: 0.875rem;
-      font-weight: 700;
-      color: mainColors("white");
-    }
-
     h2 {
-      font-size: 2.625rem;
-      font-weight: 800;
-      color: mainColors("white");
       margin-bottom: 30px;
 
       span {
@@ -45,18 +36,6 @@
     input {
       height: 55px;
       margin-bottom: 15px;
-    }
-
-    button {
-      margin-top: 15px;
-      padding: 15px 20px;
-      color: white;
-      font-weight: 800;
-      border-radius: 5px;
-      border: none;
-      background: mainColors("black");
-      transition: all 0.2s linear;
-      max-width: 150px;
     }
   }
 
@@ -113,13 +92,6 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 40px;
-
-        strong,
-        span {
-          font-size: 0.938rem;
-          font-weight: 700;
-          color: mainColors("black");
-        }
 
         span {
           &::before {

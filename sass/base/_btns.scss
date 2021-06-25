@@ -1,0 +1,69 @@
+.btn-outline {
+  margin-top: 30px;
+  padding: 20px 55px;
+  color: white;
+  font-weight: 800;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: transparent;
+  transition: all 0.2s linear;
+
+  &:hover {
+    border: 2px solid cyan;
+    background: mainColors("cyan");
+  }
+}
+
+.btn-black {
+  margin-top: 15px;
+  padding: 15px 20px;
+  color: white;
+  font-weight: 800;
+  border-radius: 5px;
+  border: none;
+  background: mainColors("black");
+  transition: all 0.2s linear;
+  max-width: 150px;
+}
+
+.btn-link {
+  position: relative;
+  color: mainColors("black");
+  font-size: 1rem;
+  font-weight: 800;
+  transition: color 0.2s linear;
+
+  i {
+    margin-left: 10px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 120px;
+    height: 1px;
+    background: black;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background: black;
+    transition: all 0.3s linear;
+  }
+
+  &:hover {
+    color: mainColors("cyan");
+
+    &::after {
+      width: 120px;
+      background: mainColors("cyan");
+    }
+  }
+}

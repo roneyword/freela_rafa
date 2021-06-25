@@ -45,15 +45,6 @@
 
     h3 {
       margin-bottom: 10px;
-      font-size: 1.375rem;
-      font-weight: 800;
-      color: mainColors("black");
-    }
-
-    p {
-      font-size: 1rem;
-      font-weight: 400;
-      color: mainColors("grey-500");
     }
 
     a {
@@ -99,18 +90,13 @@
 
       h3 {
         margin-bottom: 20px;
-        font-size: 1.3rem;
         font-weight: 500;
-        color: mainColors("white");
       }
     }
 
     cite {
       position: relative;
       padding-left: 50px;
-      font-size: 1rem;
-      font-weight: 400;
-      color: mainColors("white");
 
       &::before {
         content: "";
@@ -127,12 +113,6 @@
   .service-comments-description {
     flex: 1;
     padding: 20px 0px 20px 30px;
-
-    h3 {
-      font-size: 1rem;
-      font-weight: 400;
-      color: mainColors("white");
-    }
   }
 }
 

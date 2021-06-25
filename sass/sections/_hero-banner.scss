@@ -13,35 +13,10 @@
 
     strong {
       color: mainColors("white");
-      font-size: 0.813rem;
-      font-weight: 700;
     }
 
     h1 {
-      color: mainColors("white");
-      font-size: 4.375rem;
-      font-weight: 800;
       line-height: 5rem;
-
-      span {
-        color: mainColors("cyan");
-      }
-    }
-
-    button {
-      margin-top: 30px;
-      padding: 20px 55px;
-      color: white;
-      font-weight: 800;
-      border: 2px solid white;
-      border-radius: 5px;
-      background: transparent;
-      transition: all 0.2s linear;
-
-      &:hover {
-        border: 2px solid cyan;
-        background: mainColors("cyan");
-      }
     }
   }
 }

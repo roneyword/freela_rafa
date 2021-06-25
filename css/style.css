@@ -41,6 +41,101 @@ a {
   color: inherit;
   text-decoration: none; }
 
+.title-1 {
+  font-size: 0.9rem;
+  font-weight: 700; }
+
+.title-2 {
+  font-size: 2.625rem;
+  font-weight: 800; }
+
+.title-3 {
+  font-size: 1.375rem;
+  font-weight: 800; }
+
+.title-4 {
+  font-size: 1rem;
+  font-weight: 400; }
+
+.title-5 {
+  font-size: 1.1rem;
+  font-weight: 600; }
+
+.title-6 {
+  font-size: 4.375rem;
+  font-weight: 800;
+  line-height: 5rem; }
+
+.text-color-cyan {
+  color: var(--cyan); }
+
+.text-color-black {
+  color: var(--black); }
+
+.text-color-white {
+  color: var(--white); }
+
+.text-color-grey-300 {
+  color: var(--grey-300); }
+
+.text-color-grey-500 {
+  color: var(--grey-500); }
+
+.btn-outline {
+  margin-top: 30px;
+  padding: 20px 55px;
+  color: white;
+  font-weight: 800;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: transparent;
+  transition: all 0.2s linear; }
+  .btn-outline:hover {
+    border: 2px solid cyan;
+    background: var(--cyan); }
+
+.btn-black {
+  margin-top: 15px;
+  padding: 15px 20px;
+  color: white;
+  font-weight: 800;
+  border-radius: 5px;
+  border: none;
+  background: var(--black);
+  transition: all 0.2s linear;
+  max-width: 150px; }
+
+.btn-link {
+  position: relative;
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 800;
+  transition: color 0.2s linear; }
+  .btn-link i {
+    margin-left: 10px; }
+  .btn-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 120px;
+    height: 1px;
+    background: black; }
+  .btn-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background: black;
+    transition: all 0.3s linear; }
+  .btn-link:hover {
+    color: var(--cyan); }
+    .btn-link:hover::after {
+      width: 120px;
+      background: var(--cyan); }
+
 .hero-banner {
   display: flex;
   justify-content: center;
@@ -53,28 +148,9 @@ a {
   .hero-banner .hero-banner-title {
     max-width: 50%; }
     .hero-banner .hero-banner-title strong {
-      color: var(--white);
-      font-size: 0.813rem;
-      font-weight: 700; }
+      color: var(--white); }
     .hero-banner .hero-banner-title h1 {
-      color: var(--white);
-      font-size: 4.375rem;
-      font-weight: 800;
       line-height: 5rem; }
-      .hero-banner .hero-banner-title h1 span {
-        color: var(--cyan); }
-    .hero-banner .hero-banner-title button {
-      margin-top: 30px;
-      padding: 20px 55px;
-      color: white;
-      font-weight: 800;
-      border: 2px solid white;
-      border-radius: 5px;
-      background: transparent;
-      transition: all 0.2s linear; }
-      .hero-banner .hero-banner-title button:hover {
-        border: 2px solid cyan;
-        background: var(--cyan); }
 
 @media (max-width: 1366px) {
   .hero-banner {
@@ -126,14 +202,7 @@ a {
     .service-card-container .service-card img {
       margin-bottom: 20px; }
     .service-card-container .service-card h3 {
-      margin-bottom: 10px;
-      font-size: 1.375rem;
-      font-weight: 800;
-      color: var(--black); }
-    .service-card-container .service-card p {
-      font-size: 1rem;
-      font-weight: 400;
-      color: var(--grey-500); }
+      margin-bottom: 10px; }
     .service-card-container .service-card a {
       position: absolute;
       right: -70px;
@@ -167,15 +236,10 @@ a {
       flex-direction: column; }
       .service-comments .service-comments-name .service-comments-name-wrapper h3 {
         margin-bottom: 20px;
-        font-size: 1.3rem;
-        font-weight: 500;
-        color: var(--white); }
+        font-weight: 500; }
     .service-comments .service-comments-name cite {
       position: relative;
-      padding-left: 50px;
-      font-size: 1rem;
-      font-weight: 400;
-      color: var(--white); }
+      padding-left: 50px; }
       .service-comments .service-comments-name cite::before {
         content: "";
         position: absolute;
@@ -187,10 +251,6 @@ a {
   .service-comments .service-comments-description {
     flex: 1;
     padding: 20px 0px 20px 30px; }
-    .service-comments .service-comments-description h3 {
-      font-size: 1rem;
-      font-weight: 400;
-      color: var(--white); }
 
 @media (max-width: 768px) {
   .service-card-container {
@@ -218,18 +278,6 @@ a {
 .service-company-title {
   margin-bottom: 50px;
   text-align: center; }
-  .service-company-title span {
-    color: var(--grey-500);
-    font-size: 0.9rem;
-    font-weight: 700; }
-  .service-company-title h2 {
-    color: var(--black);
-    font-size: 2.625rem;
-    font-weight: 800; }
-  .service-company-title h3 {
-    color: var(--cyan);
-    font-size: 2.625rem;
-    font-weight: 800; }
 
 .service-company-content {
   display: flex; }
@@ -243,9 +291,6 @@ a {
     flex: 1; }
     .service-company-content .service-company-content-container h4 {
       margin-bottom: 30px;
-      color: var(--grey-500);
-      font-size: 1.1rem;
-      font-weight: 600;
       line-height: 1.8; }
     .service-company-content .service-company-content-container .service-company-card {
       display: flex;
@@ -255,15 +300,6 @@ a {
         width: 12%;
         height: auto;
         margin-right: 30px; }
-      .service-company-content .service-company-content-container .service-company-card .service-company-card-text h2 {
-        color: var(--black);
-        font-size: 1.1rem;
-        font-weight: 800; }
-      .service-company-content .service-company-content-container .service-company-card .service-company-card-text p {
-        color: var(--grey-500);
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 2; }
 
 @media (max-width: 768px) {
   .service-company-content {
@@ -284,52 +320,7 @@ a {
   margin-bottom: 30px; }
   .service-team-content .service-team-content-title {
     width: 85%; }
-    .service-team-content .service-team-content-title span {
-      color: var(--grey-500);
-      font-size: 0.9rem;
-      font-weight: 700; }
-    .service-team-content .service-team-content-title h2 {
-      color: var(--black);
-      font-size: 2.625rem;
-      font-weight: 800; }
-    .service-team-content .service-team-content-title h3 {
-      color: var(--cyan);
-      font-size: 2.625rem;
-      font-weight: 800; }
-    .service-team-content .service-team-content-title a {
-      position: relative;
-      color: var(--black);
-      font-size: 1rem;
-      font-weight: 800;
-      transition: color 0.2s linear; }
-      .service-team-content .service-team-content-title a i {
-        margin-left: 10px; }
-      .service-team-content .service-team-content-title a::before {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 120px;
-        height: 1px;
-        background: black; }
-      .service-team-content .service-team-content-title a::after {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 0px;
-        height: 1px;
-        background: black;
-        transition: all 0.3s linear; }
-      .service-team-content .service-team-content-title a:hover {
-        color: var(--cyan); }
-        .service-team-content .service-team-content-title a:hover::after {
-          width: 120px;
-          background: var(--cyan); }
   .service-team-content .service-team-content-text p {
-    color: var(--grey-500);
-    font-size: 1rem;
-    font-weight: 400;
     line-height: 1.9; }
 
 .service-team-card-container {
@@ -375,15 +366,9 @@ a {
         color: var(--cyan);
         line-height: 1.8; }
       .service-team-card-container .service-team-card .service-team-card-box h2 {
-        font-size: 1.375rem;
-        font-weight: 800;
-        color: var(--black);
         line-height: 1.8; }
       .service-team-card-container .service-team-card .service-team-card-box p {
         margin-bottom: 20px;
-        font-size: 1rem;
-        font-weight: 400;
-        color: var(--grey-500);
         line-height: 1.2; }
       .service-team-card-container .service-team-card .service-team-card-box .service-team-card-box-link {
         margin-bottom: -35px; }
@@ -428,7 +413,7 @@ a {
   position: relative;
   width: 5rem;
   height: 5rem;
-  background-color: #fff;
+  background-color: var(--white);
   text-align: center;
   display: inline-block;
   border-radius: 50%;
@@ -437,7 +422,7 @@ a {
     content: "";
     width: 5rem;
     height: 5rem;
-    background-color: #fff;
+    background-color: var(--white);
     text-align: center;
     display: inline-block;
     border-radius: 50%;
@@ -461,14 +446,11 @@ a {
 
 .video-banner-content {
   width: 100%;
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
   text-align: center;
   margin-top: 30px; }
   .video-banner-content h2 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--white);
     line-height: 1.2; }
 
 @keyframes ripple {
@@ -494,14 +476,7 @@ a {
     background-size: cover;
     background-position: center;
     background-color: var(--cyan); }
-    .subscribe form strong {
-      font-size: 0.875rem;
-      font-weight: 700;
-      color: var(--white); }
     .subscribe form h2 {
-      font-size: 2.625rem;
-      font-weight: 800;
-      color: var(--white);
       margin-bottom: 30px; }
       .subscribe form h2 span {
         color: var(--black); }
@@ -517,16 +492,6 @@ a {
     .subscribe form input {
       height: 55px;
       margin-bottom: 15px; }
-    .subscribe form button {
-      margin-top: 15px;
-      padding: 15px 20px;
-      color: white;
-      font-weight: 800;
-      border-radius: 5px;
-      border: none;
-      background: var(--black);
-      transition: all 0.2s linear;
-      max-width: 150px; }
   .subscribe .subscribe-content {
     display: flex;
     flex-direction: column;
@@ -570,11 +535,6 @@ a {
         display: flex;
         justify-content: space-between;
         margin-bottom: 40px; }
-        .subscribe .subscribe-content .subscribe-progress-container .subscribe-progress strong,
-        .subscribe .subscribe-content .subscribe-progress-container .subscribe-progress span {
-          font-size: 0.938rem;
-          font-weight: 700;
-          color: var(--black); }
         .subscribe .subscribe-content .subscribe-progress-container .subscribe-progress span::before {
           content: "";
           position: absolute;
@@ -656,21 +616,10 @@ a {
   width: 100%;
   max-width: 800px;
   margin: 0 auto 50px auto; }
-  .resource-title strong {
-    color: var(--grey-500);
-    font-size: 0.9rem;
-    font-weight: 700; }
   .resource-title h2 {
-    color: var(--black);
-    font-size: 2.625rem;
-    font-weight: 800;
     margin-bottom: 20px; }
     .resource-title h2 span {
       color: var(--cyan); }
-  .resource-title p {
-    color: var(--grey-500);
-    font-size: 1.125rem;
-    font-weight: 400; }
 
 .resource-card-container {
   display: flex;
@@ -725,14 +674,7 @@ a {
     .resource-card-container .resource-card .resource-card-content {
       text-align: center; }
       .resource-card-container .resource-card .resource-card-content h3 {
-        font-size: 1.375rem;
-        font-weight: 800;
-        color: var(--black);
         margin-bottom: 20px; }
-      .resource-card-container .resource-card .resource-card-content p {
-        font-size: 1rem;
-        font-weight: 400;
-        color: var(--grey-500); }
 
 @media (max-width: 1075px) {
   .resource-card-container .resource-card::after {
@@ -786,14 +728,7 @@ a {
       opacity: 0;
       transition: all 0.5s cubic-bezier(0.01, -0.02, 0, 0.25); }
       .testimonial-container-card .testimonial-card .testimonial-content span {
-        text-transform: uppercase;
-        font-size: 0.875rem;
-        font-weight: 400;
-        color: var(--white); }
-      .testimonial-container-card .testimonial-card .testimonial-content h3 {
-        font-size: 1.375rem;
-        font-weight: 800;
-        color: var(--white); }
+        text-transform: uppercase; }
     .testimonial-container-card .testimonial-card:hover {
       cursor: pointer;
       background: rgba(0, 0, 0, 0.7); }
@@ -817,55 +752,22 @@ a {
     width: 40%;
     margin-right: 50px; }
     .testimonial-content .testimonial-content-text strong {
-      display: block;
-      margin-bottom: 20px;
-      color: var(--white);
-      font-size: 0.9rem;
-      font-weight: 700; }
+      margin-bottom: 20px; }
     .testimonial-content .testimonial-content-text h2 {
-      color: var(--white);
-      font-size: 2.625rem;
-      font-weight: 800;
       line-height: 1;
       margin-bottom: 20px; }
       .testimonial-content .testimonial-content-text h2 span {
         color: var(--black); }
     .testimonial-content .testimonial-content-text p {
       color: rgba(255, 255, 255, 0.9);
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 1.6;
       margin-bottom: 20px; }
-    .testimonial-content .testimonial-content-text a {
-      position: relative;
-      color: var(--black);
-      font-size: 1rem;
-      font-weight: 800;
-      transition: color 0.2s linear; }
-      .testimonial-content .testimonial-content-text a i {
-        margin-left: 10px; }
-      .testimonial-content .testimonial-content-text a::before {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
+    .testimonial-content .testimonial-content-text .btn-link::before {
+      width: 150px; }
+    .testimonial-content .testimonial-content-text .btn-link:hover {
+      color: var(--white); }
+      .testimonial-content .testimonial-content-text .btn-link:hover::after {
         width: 150px;
-        height: 1px;
-        background: black; }
-      .testimonial-content .testimonial-content-text a::after {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 0px;
-        height: 1px;
-        background: black;
-        transition: all 0.3s linear; }
-      .testimonial-content .testimonial-content-text a:hover {
-        color: var(--white); }
-        .testimonial-content .testimonial-content-text a:hover::after {
-          width: 150px;
-          background: var(--white); }
+        background: var(--white); }
   .testimonial-content .testimonial-content-container {
     position: relative;
     display: flex;
@@ -890,16 +792,10 @@ a {
         border-radius: 8px;
         background: var(--white); }
         .testimonial-content .testimonial-content-container .testimonial-content-card blockquote p {
-          font-size: 1.375rem;
           font-weight: 400;
-          color: var(--grey-500);
           margin-bottom: 40px; }
-        .testimonial-content .testimonial-content-container .testimonial-content-card blockquote cite {
-          font-size: 1rem;
-          font-weight: 700;
-          color: var(--cyan); }
-          .testimonial-content .testimonial-content-container .testimonial-content-card blockquote cite span {
-            color: var(--grey-500); }
+        .testimonial-content .testimonial-content-container .testimonial-content-card blockquote cite span {
+          color: var(--grey-500); }
         .testimonial-content .testimonial-content-container .testimonial-content-card blockquote i {
           position: absolute;
           bottom: 20px;
@@ -961,14 +857,7 @@ a {
   width: 100%;
   max-width: 800px;
   margin: 0 auto 50px auto; }
-  .storie-title strong {
-    color: var(--grey-500);
-    font-size: 0.9rem;
-    font-weight: 700; }
   .storie-title h2 {
-    color: var(--black);
-    font-size: 2.625rem;
-    font-weight: 800;
     margin-bottom: 20px; }
     .storie-title h2 span {
       color: var(--cyan); }
@@ -1278,17 +1167,12 @@ footer {
           font-weight: 700;
           color: var(--white); }
       footer .footer-banner .footer-banner-content button {
-        width: auto;
+        margin-top: 0px;
         height: 60px;
-        padding: 0px 30px;
-        color: white;
-        font-weight: 800;
-        border: 2px solid white;
-        border-radius: 5px;
-        background: transparent;
-        transition: all 0.2s linear; }
+        padding: 0px 30px; }
         footer .footer-banner .footer-banner-content button:hover {
-          color: var(--cyan);
+          border: 2px solid white;
+          color: var(--black);
           background: var(--white); }
   footer .footer-content {
     margin: 0 20px; }
