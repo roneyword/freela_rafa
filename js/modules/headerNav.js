@@ -1,6 +1,8 @@
 export default function headerNav() {
   const nav = document.querySelector("header nav");
-  const heroBanner = document.querySelector(".hero-banner");
+  const heroBanner =
+    document.querySelector(".hero-banner") ||
+    document.querySelector(".hero-banner-default");
   const middleBanner = heroBanner.clientHeight * 0.1;
   const buttonMenuMobile = document.querySelector(".header-menu-mobile");
   const headerNavLink = document.querySelector(".header-link");

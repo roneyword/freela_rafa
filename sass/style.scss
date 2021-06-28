@@ -24,19 +24,17 @@
 @import "base/btns";
 
 // ==========================================================================
-// Section
+// Pages
 // ==========================================================================
 
-@import "sections/hero-banner";
-@import "sections/service-card";
-@import "sections/service-company";
-@import "sections/service-team";
-@import "sections/video-banner";
-@import "sections/subscribe";
-@import "sections/resource";
-@import "sections/testimonial";
-@import "sections/company-img";
-@import "sections/storie";
+// HOME
+@import "./pages/home/style-home";
+
+// ABOUT
+@import "./pages/about/style-about";
+
+// SERVICE
+@import "./pages/service/style.scss";
 
 // ==========================================================================
 // Component
@@ -44,3 +42,4 @@
 
 @import "component/header";
 @import "component/footer";
+@import "component/hero-banner-default";

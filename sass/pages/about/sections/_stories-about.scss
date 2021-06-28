@@ -1,0 +1,101 @@
+.stories-about {
+  padding: 100px 20px;
+
+  .stories-about-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .stories-about-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .stories-about-card {
+      position: relative;
+      width: calc(100% / 3 - 20px);
+      padding: 40px;
+      border-radius: 8px;
+      background: mainColors("white");
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        height: 90%;
+        transform: translate(-50%, -50%);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .stories-about-card-header {
+        margin-bottom: 30px;
+
+        time {
+          padding: 10px 20px;
+          border-radius: 8px;
+          background: mainColors("cyan");
+          font-size: 0.813rem;
+          font-weight: 400;
+          color: mainColors("white");
+        }
+      }
+
+      .stories-about-card-body {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ededed;
+
+        p {
+          margin: 15px 0px;
+        }
+      }
+
+      .stories-about-card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        .storie-card-footer {
+          i {
+            font-size: 0.813rem;
+            color: mainColors("cyan");
+          }
+
+          small {
+            font-size: 0.813rem;
+            font-weight: 400;
+            color: mainColors("grey-500");
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 882px) {
+  .stories-about {
+    .stories-about-card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .stories-about-card {
+        width: calc(50% - 20px);
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 574px) {
+  .stories-about {
+    .stories-about-card-container {
+      .stories-about-card {
+        width: 100%;
+      }
+    }
+  }
+}

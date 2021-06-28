@@ -1,0 +1,54 @@
+.employe {
+  padding: 100px 20px;
+
+  .employe-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .employe-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .employe-card {
+      width: calc(100% / 4 - 20px);
+      min-width: 200px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      border-bottom: 3px solid mainColors("cyan");
+      box-shadow: 0 0 24px 0 rgba(26, 47, 106, 0.1);
+      overflow: hidden;
+      transition: all 0.3s linear;
+
+      &:hover {
+        transform: translateY(-10px);
+        border-bottom: 3px solid mainColors("black");
+      }
+
+      .employe-card-header {
+        position: relative;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .employe-card-body {
+        padding: 20px 0px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .employe {
+    .employe-card-container {
+      .employe-card {
+        width: 100%;
+      }
+    }
+  }
+}

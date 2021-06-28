@@ -1,56 +1,32 @@
-%base-title-1 {
+.title-1 {
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-%base-title-2 {
+.title-2 {
   font-size: 2.625rem;
   font-weight: 800;
 }
 
-%base-title-3 {
+.title-3 {
   font-size: 1.375rem;
   font-weight: 800;
 }
 
-%base-title-4 {
+.title-4 {
   font-size: 1rem;
   font-weight: 400;
 }
 
-%base-title-5 {
+.title-5 {
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-%base-title-6 {
+.title-6 {
   font-size: 4.375rem;
   font-weight: 800;
   line-height: 5rem;
-}
-
-.title-1 {
-  @extend %base-title-1;
-}
-
-.title-2 {
-  @extend %base-title-2;
-}
-
-.title-3 {
-  @extend %base-title-3;
-}
-
-.title-4 {
-  @extend %base-title-4;
-}
-
-.title-5 {
-  @extend %base-title-5;
-}
-
-.title-6 {
-  @extend %base-title-6;
 }
 
 .text-color-cyan {
@@ -71,4 +47,11 @@
 
 .text-color-grey-500 {
   color: mainColors("grey-500");
+}
+
+@media (max-width: 425px) {
+  .title-2 {
+    font-size: 1.875rem;
+    font-weight: 800;
+  }
 }

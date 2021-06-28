@@ -1,0 +1,26 @@
+.hero-banner-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+  padding: 0 20px;
+  background-image: url(../../../../assets/img/page_about/hero_banner_default/about_hero_banner_default_.jpg);
+  background-size: cover;
+  background-position: right;
+
+  .hero-banner-default-title {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .hero-banner-default {
+    min-height: 95vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-banner-default {
+    background-position: 63%;
+  }
+}
