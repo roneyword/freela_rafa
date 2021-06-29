@@ -1,5 +1,5 @@
 .service-team {
-  padding: 100px 20px;
+  @extend %space-base;
   background: mainColors("grey-300");
 }
 

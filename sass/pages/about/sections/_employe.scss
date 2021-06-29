@@ -1,5 +1,5 @@
 .employe {
-  padding: 100px 20px;
+  @extend %space-base;
 
   .employe-title {
     text-align: center;

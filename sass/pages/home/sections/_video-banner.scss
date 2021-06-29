@@ -4,11 +4,11 @@ $ripple-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 85vh;
+  padding-bottom: 200px;
   background-image: url(../../assets/img/video_banner/video_banner.jpg);
   background-size: cover;
   background-position: center;
-  padding: 100px 0px;
+  @extend %space-base;
 }
 
 .video-banner-icon {
@@ -75,5 +75,11 @@ $ripple-color: white;
   }
   100% {
     box-shadow: 0 0 0 4rem rgba($ripple-color, 0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .video-banner {
+    padding-bottom: 70px;
   }
 }

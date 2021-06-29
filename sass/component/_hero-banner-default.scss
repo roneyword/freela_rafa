@@ -24,3 +24,9 @@
     background-position: 63%;
   }
 }
+
+@media (max-width: 425px) {
+  .hero-banner-default {
+    min-height: 80vh;
+  }
+}

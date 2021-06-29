@@ -1,0 +1,9 @@
+%space-base {
+  padding: 100px 20px;
+}
+
+@media (max-width: 425px) {
+  %space-base {
+    padding: 70px 20px;
+  }
+}

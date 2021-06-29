@@ -18,6 +18,10 @@
     h1 {
       line-height: 5rem;
     }
+
+    button {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -37,6 +41,8 @@
 
 @media (max-width: 768px) {
   .hero-banner {
+    min-height: 80vh;
+
     .hero-banner-title {
       max-width: 90%;
     }
@@ -45,6 +51,8 @@
 
 @media (max-width: 550px) {
   .hero-banner {
+    min-height: 80vh;
+
     .hero-banner-title {
       h1 {
         font-size: 3rem;

@@ -1,5 +1,5 @@
 .engine-post {
-  padding: 100px 20px;
+  @extend %space-base;
 
   .engine-post-content {
     display: flex;

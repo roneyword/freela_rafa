@@ -1,5 +1,5 @@
 .consulting {
-  padding: 100px 20px;
+  @extend %space-base;
 
   .consulting-container {
     display: flex;

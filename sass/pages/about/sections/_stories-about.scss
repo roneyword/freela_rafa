@@ -1,5 +1,5 @@
 .stories-about {
-  padding: 100px 20px;
+  @extend %space-base;
 
   .stories-about-title {
     text-align: center;
