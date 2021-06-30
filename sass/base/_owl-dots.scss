@@ -1,0 +1,13 @@
+.owl-nav.disabled + .owl-dots {
+  button {
+    &.active {
+      span {
+        background: white;
+      }
+    }
+
+    span {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

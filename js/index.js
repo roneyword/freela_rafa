@@ -1,9 +1,5 @@
 import headerNav from "./modules/headerNav.js";
-let headerHeight = document.querySelector("header").clientHeight;
+import initCarrouselHeroBanner from "./modules/initCarrouselHeroBanner.js";
 
 headerNav();
-
-// window.addEventListener("resize", () => {
-//   headerHeight = document.querySelector("header").clientHeight;
-//   scrollSmooth(headerHeight);
-// });
+initCarrouselHeroBanner();

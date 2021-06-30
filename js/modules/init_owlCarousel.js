@@ -1,4 +1,17 @@
 $(document).ready(function () {
+  $("#hero-banner").owlCarousel({
+    loop: true,
+    responsiveClass: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+
   $("#testimonial-team").owlCarousel({
     loop: true,
     responsiveClass: true,

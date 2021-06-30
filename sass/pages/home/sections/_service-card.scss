@@ -1,9 +1,11 @@
 .service {
+  position: relative;
   min-height: 45vh;
   background-image: url(../../assets/img/service_card/n-bg-02.png);
   background-size: cover;
   background-position: center;
   background-color: mainColors("cyan");
+  z-index: 20;
 }
 
 .service-card-container {

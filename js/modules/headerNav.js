@@ -12,12 +12,6 @@ export default function headerNav() {
   window.onscroll = function () {
     let currentScrollpos = window.pageYOffset;
 
-    // if (prevScrollpos > currentScrollpos) {
-    //   nav.style.top = "0px";
-    // } else {
-    //   nav.style.top = "-100px";
-    // }
-
     prevScrollpos = currentScrollpos;
 
     if (currentScrollpos >= middleBanner) {

@@ -1,26 +1,56 @@
 .hero-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   min-height: 100vh;
-  padding: 0 20px;
-  background-image: url(../../assets/img/hero_banner/n-slider-01.jpg);
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
 
-  .hero-banner-title {
-    max-width: 50%;
+  .owl-theme {
+    .owl-nav.disabled + .owl-dots {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: rotate(90deg);
 
-    strong {
-      color: mainColors("white");
+      button {
+        &.active {
+          span {
+            background: white;
+          }
+        }
+
+        span {
+          background: rgba(255, 255, 255, 0.5);
+          width: 15px;
+          height: 15px;
+        }
+      }
     }
+  }
 
-    h1 {
-      line-height: 5rem;
-    }
+  .hero-banner-img {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
 
-    button {
-      margin-top: 20px;
+    .hero-banner-content {
+      width: 100%;
+      max-width: 800px;
+      padding: 0 20px;
+
+      strong {
+        color: mainColors("white");
+      }
+
+      h1 {
+        line-height: 5rem;
+      }
+
+      button {
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -28,12 +58,16 @@
 @media (max-width: 1366px) {
   .hero-banner {
     min-height: 140vh;
+
+    .hero-banner-img {
+      min-height: 140vh;
+    }
   }
 }
 
 @media (max-width: 1180px) {
   .hero-banner {
-    .hero-banner-title {
+    .hero-banner-content {
       max-width: 70%;
     }
   }
@@ -43,8 +77,16 @@
   .hero-banner {
     min-height: 80vh;
 
-    .hero-banner-title {
-      max-width: 90%;
+    .hero-banner-img {
+      min-height: 80vh;
+
+      .hero-banner-content {
+        max-width: 500px;
+        h1 {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+      }
     }
   }
 }
@@ -53,10 +95,40 @@
   .hero-banner {
     min-height: 80vh;
 
-    .hero-banner-title {
-      h1 {
-        font-size: 3rem;
-        line-height: 3rem;
+    .hero-banner-img {
+      .hero-banner-content {
+        h1 {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-banner {
+    .hero-banner-img {
+      .hero-banner-content {
+        max-width: 380px;
+        h1 {
+          font-size: 2.8rem;
+          line-height: 2.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 385px) {
+  .hero-banner {
+    .hero-banner-img {
+      .hero-banner-content {
+        max-width: 340px;
+        h1 {
+          font-size: 2.8rem;
+          line-height: 2.7rem;
+        }
       }
     }
   }

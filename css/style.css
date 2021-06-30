@@ -146,47 +146,89 @@ a {
 @media (max-width: 425px) {
   .service-company, .service-team, .video-banner, .storie, .chooseus, .resource-service, .employe, .stories-about, .service-person, .engine-post, .consulting, .contact {
     padding: 70px 20px; } }
+.owl-nav.disabled + .owl-dots button.active span {
+  background: white; }
+.owl-nav.disabled + .owl-dots button span {
+  background: rgba(255, 255, 255, 0.5); }
+
 .hero-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   min-height: 100vh;
-  padding: 0 20px;
-  background-image: url(../../assets/img/hero_banner/n-slider-01.jpg);
-  background-size: cover;
-  background-position: center; }
-  .hero-banner .hero-banner-title {
-    max-width: 50%; }
-    .hero-banner .hero-banner-title strong {
-      color: var(--white); }
-    .hero-banner .hero-banner-title h1 {
-      line-height: 5rem; }
-    .hero-banner .hero-banner-title button {
-      margin-top: 20px; }
+  width: 100%;
+  overflow: hidden;
+  z-index: 10; }
+  .hero-banner .owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: rotate(90deg); }
+    .hero-banner .owl-theme .owl-nav.disabled + .owl-dots button.active span {
+      background: white; }
+    .hero-banner .owl-theme .owl-nav.disabled + .owl-dots button span {
+      background: rgba(255, 255, 255, 0.5);
+      width: 15px;
+      height: 15px; }
+  .hero-banner .hero-banner-img {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center; }
+    .hero-banner .hero-banner-img .hero-banner-content {
+      width: 100%;
+      max-width: 800px;
+      padding: 0 20px; }
+      .hero-banner .hero-banner-img .hero-banner-content strong {
+        color: var(--white); }
+      .hero-banner .hero-banner-img .hero-banner-content h1 {
+        line-height: 5rem; }
+      .hero-banner .hero-banner-img .hero-banner-content button {
+        margin-top: 20px; }
 
 @media (max-width: 1366px) {
   .hero-banner {
-    min-height: 140vh; } }
+    min-height: 140vh; }
+    .hero-banner .hero-banner-img {
+      min-height: 140vh; } }
 @media (max-width: 1180px) {
-  .hero-banner .hero-banner-title {
+  .hero-banner .hero-banner-content {
     max-width: 70%; } }
 @media (max-width: 768px) {
   .hero-banner {
     min-height: 80vh; }
-    .hero-banner .hero-banner-title {
-      max-width: 90%; } }
+    .hero-banner .hero-banner-img {
+      min-height: 80vh; }
+      .hero-banner .hero-banner-img .hero-banner-content {
+        max-width: 500px; }
+        .hero-banner .hero-banner-img .hero-banner-content h1 {
+          font-size: 3rem;
+          line-height: 3rem; } }
 @media (max-width: 550px) {
   .hero-banner {
     min-height: 80vh; }
-    .hero-banner .hero-banner-title h1 {
+    .hero-banner .hero-banner-img .hero-banner-content h1 {
       font-size: 3rem;
       line-height: 3rem; } }
+@media (max-width: 425px) {
+  .hero-banner .hero-banner-img .hero-banner-content {
+    max-width: 380px; }
+    .hero-banner .hero-banner-img .hero-banner-content h1 {
+      font-size: 2.8rem;
+      line-height: 2.7rem; } }
+@media (max-width: 385px) {
+  .hero-banner .hero-banner-img .hero-banner-content {
+    max-width: 340px; }
+    .hero-banner .hero-banner-img .hero-banner-content h1 {
+      font-size: 2.8rem;
+      line-height: 2.7rem; } }
 .service {
+  position: relative;
   min-height: 45vh;
   background-image: url(../../assets/img/service_card/n-bg-02.png);
   background-size: cover;
   background-position: center;
-  background-color: var(--cyan); }
+  background-color: var(--cyan);
+  z-index: 20; }
 
 .service-card-container {
   display: flex;
