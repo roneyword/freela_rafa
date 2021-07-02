@@ -116,9 +116,61 @@ header {
         display: flex;
 
         li {
+          position: relative;
           flex: 1;
           display: flex;
           text-align: center;
+
+          &.header-item-sub-link {
+            &:hover {
+              ul {
+                visibility: visible;
+                opacity: 1;
+              }
+            }
+
+            .header-sublink {
+              position: absolute;
+              top: calc(100% + 1px);
+              left: 0px;
+              display: flex;
+              flex-direction: column;
+              min-width: 270px;
+              border-top: 3px solid mainColors("cyan");
+              background: mainColors("white");
+              box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+              visibility: hidden;
+              opacity: 0;
+              transition: all 0.3s linear;
+
+              li {
+                text-align: left;
+                a {
+                  padding: 15px 30px;
+                  color: #242424;
+                  font-size: 0.875rem;
+                  font-weight: 700;
+                  line-height: 1.5;
+                  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+                  span {
+                    display: block;
+                    transition: all 0.3s linear;
+                  }
+
+                  &:hover {
+                    background: mainColors("cyan");
+                    color: white;
+
+                    span {
+                      transform: translateX(10px);
+                    }
+                  }
+                }
+              }
+            }
+          }
+
           a {
             display: block;
             width: 100%;
@@ -180,6 +232,7 @@ header {
             li {
               a {
                 color: white;
+                padding: 20px;
               }
 
               &.isActive {
@@ -272,7 +325,8 @@ header {
         min-width: 300px;
         height: calc(100vh - 106px);
         margin: 0;
-        background: black;
+        background: #222;
+        overflow-y: auto;
         transform: translateX(100%);
 
         &.isActive {
@@ -282,15 +336,83 @@ header {
 
         ul {
           flex-direction: column;
-          height: 100%;
 
           li {
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            text-align: left;
             border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+
+            &.header-item-sub-link {
+              &::after {
+                content: "";
+                position: absolute;
+                top: 31px;
+                right: 20px;
+                width: 13px;
+                height: 3px;
+                background: white;
+                border-radius: 30px;
+                transform: rotate(-45deg);
+              }
+
+              &::before {
+                content: "";
+                position: absolute;
+                top: 24px;
+                right: 20px;
+                width: 13px;
+                height: 3px;
+                background: white;
+                border-radius: 30px;
+                transform: rotate(42deg);
+              }
+
+              &:hover {
+                ul {
+                  max-height: 700px;
+                  visibility: visible;
+                  opacity: 1;
+                }
+              }
+
+              .header-sublink {
+                position: relative;
+                max-height: 0px;
+                border-top: none;
+                background: #222;
+
+                li {
+                  a {
+                    padding: 15px 30px;
+                    color: white;
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    line-height: 1.5;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+                    span {
+                      display: block;
+                      transition: all 0.3s linear;
+                    }
+
+                    &:hover {
+                      background: mainColors("cyan");
+                      color: white;
+
+                      span {
+                        transform: translateX(10px);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
             a {
-              padding: 0px 0px;
+              padding: 20px;
             }
           }
         }
